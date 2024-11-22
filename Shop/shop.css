@@ -1,0 +1,41 @@
+.header {
+    grid-area: header;
+    background-color: #133E87;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 40px;
+    color: #f9c74f;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #f9c74f;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #4A628A;
+    color: black;
+    border-color: #ddd;
+}

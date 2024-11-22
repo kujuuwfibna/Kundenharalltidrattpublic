@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "aside"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    gap: 20px;
+    padding-top: 120px;
+    background-color: #E3F2FD;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #133E87;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 40px;
+    color: #f9c74f;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #f9c74f;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #4A628A;
+    color: black;
+    border-color: #ddd;
+}
+
+img#picture {
+    height: 90px;
+    width: 115px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+img#aboutsnoopy {
+    float: right 20px;
+
+}
+
+
+.content {
+    grid-area: content;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.aside {
+    grid-area: aside;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 250px;
+    margin-left: auto;
+    max-height: 550px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #133E87;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.footer ul a {
+    color: #f9c74f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer ul a:hover {
+    color: black;
+}
+
+.footer p {
+    font-size: 14px;
+}

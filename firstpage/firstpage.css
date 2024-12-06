@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 0;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -50,11 +59,12 @@
 }
 
 .navbar a:hover {
-    background-color: #4A628A;
+    background-color: cornflowerblue;
     color: black;
     border-color: #ddd;
 }
 
+/* keep in mind this color and use it later :) #4A628A */
 img#picture {
     height: 90px;
     width: 115px;
@@ -116,6 +126,7 @@ img#aboutsnoopy {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .footer ul {

@@ -11,6 +11,15 @@
     left: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3F2FD;
+
+}
+
 .logo {
     font-size: 40px;
     color: #f9c74f;
@@ -38,4 +47,20 @@
     background-color: #4A628A;
     color: black;
     border-color: #ddd;
+}
+
+.card .image {
+
+    height: 150px;
+    width: 150px;
+
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+
 }

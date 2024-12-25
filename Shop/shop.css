@@ -1,66 +1,212 @@
-.header {
-    grid-area: header;
-    background-color: #133E87;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* General body styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, sans-serif;
     background-color: #E3F2FD;
-
+    color: #333;
 }
 
-.logo {
-    font-size: 40px;
-    color: #f9c74f;
-    text-decoration: none;
-    font-weight: 700;
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "content"
+        "aside"
+        "footer";
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    background-color: #E3F2FD;
 }
 
-.navbar {
+/* Header styles */
+header {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 16;
+    background-color: #133E87;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f9c74f
 }
 
-.navbar a {
-    font-size: 16px;
-    color: #f9c74f;
-    font-weight: 500;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    color: #f9c74f;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    /* Needed for the underline animation */
 }
 
-.navbar a:hover {
-    background-color: #4A628A;
-    color: black;
-    border-color: #ddd;
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+
 }
 
-.card .image {
 
-    height: 150px;
-    width: 150px;
-
-}
-
-.image img {
-    height: 100%;
+header nav ul li a:hover::after {
     width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+}
+
+.hero {
+    background-image: url('/media/snoopy-starry-night-art-lil-boy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    background-size: 1050px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.hero .cta-button:hover {
+    background-color: #ff4c3b;
+    transform: scale(1.05);
+
+}
 
 
+.product-gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.product .buy-button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product .buy-button:hover {
+    background-color: #ff4c3b;
+    transform: scale(1.05);
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: #133E87;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: #f9c74f;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: black;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 10px;
 }

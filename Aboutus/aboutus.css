@@ -1,36 +1,78 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
  .grid-container {
      display: grid;
      grid-template-areas:
          "header"
+         "middleman"
+         "hero"
          "content"
          "footer";
      grid-template-columns: 1fr;
      grid-template-rows: auto 1fr auto;
      min-height: 100vh;
-     padding-top: 120px;
      background-color: #E3F2FD;
  }
 
- .header {
-     grid-area: header;
-     background-color: #133E87;
-     display: flex;
-     align-items: center;
-     padding: 20px;
-     gap: 20px;
-     width: 100%;
-     position: fixed;
-     top: 0;
-     left: 0;
+
+
+
+ #longtext {
+     font-size: 75px;
+     text-align: center;
+     margin-top: 25px
  }
 
- .about {
-     border: 2px solid #133E87;
-     border-radius: 10px;
-     padding: 10px;
-     background-color: #fff;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ #our-mission {
+     font-family: Arial, Helvetica, sans-serif;
+     margin-top: 100px;
+     text-align: center;
+     font-size: 100px;
+
  }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     font-size: 16;
+     background-color: #133E87;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     color: #f9c74f
+ }
+
+ header .logo {
+     font-size: 24px;
+     font-weight: bold;
+
+ }
+
+ header nav ul {
+     list-style-type: none;
+     display: flex;
+     gap: 20px;
+ }
+
+ header nav ul li {
+     padding: 10px;
+ }
+
+ header nav ul li a {
+     text-decoration: none;
+     color: #f9c74f;
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ header nav ul li a:hover {
+     color: #ffffff;
+     text-decoration: underline;
+ }
+
 
 
  .logo {
@@ -69,51 +111,53 @@
      border-radius: 50%;
  }
 
+ .hero {
+     background-image: url('/media/Antique-Painting-Eduard-Fischer_sfa31__45155.jpg');
+     background-size: cover;
+     background-position: center;
+     background-color: #333;
+     background-size: 1900px;
+     color: #fff;
+     text-align: center;
+     padding: 100px 20px;
+     height: 130px;
 
- .content {
-     grid-area: content;
-     padding: 40px;
+ }
+
+ .hero h1 {
+     font-size: 3em;
+     margin-bottom: 10px;
      text-align: center;
  }
 
- .content h1 {
-     color: #133E87;
-     font-size: 36px;
+ .hero p {
+     font-size: 1.2em;
+     padding-top: 15px;
  }
 
- .content p {
-     font-size: 18px;
-     color: #4A628A;
-     line-height: 1.6;
-     margin-top: 20px;
- }
-
- .image-gallery {
+ .profile-section {
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      gap: 20px;
-     margin-top: 40px;
+     padding-top: 20px;
  }
 
- .image-gallery .image-card {
-     border: 2px solid #133E87;
+ .profile-card {
+     background-color: #ffffff;
+     text-align: center;
+     padding: 20px;
      border-radius: 10px;
-     padding: 10px;
-     background-color: #fff;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     width: 250px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
- .image-gallery .image-card img {
-     height: 150px;
-     width: 150px;
-     border-radius: 50%;
- }
 
- .image-gallery .image-card p {
-     color: #133E87;
-     font-size: 16px;
-     margin-top: 10px;
- }
+
+
 
  .footer {
      grid-area: footer;

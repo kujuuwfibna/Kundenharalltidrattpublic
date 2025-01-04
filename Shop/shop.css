@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* General body styles */
@@ -58,7 +59,6 @@ header nav ul li a {
     font-size: 16px;
     font-weight: bold;
     position: relative;
-    /* Needed for the underline animation */
 }
 
 header nav ul li a::after {
@@ -69,7 +69,7 @@ header nav ul li a::after {
     width: 0;
     height: 2px;
     background: #ffffff;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 
 }
 

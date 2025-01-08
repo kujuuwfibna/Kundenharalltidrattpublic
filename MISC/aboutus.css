@@ -120,7 +120,7 @@
      border-radius: 50%;
  }
 
- .hero {
+ .heroimage {
      background-image: url('/media/Antique-Painting-Eduard-Fischer_sfa31__45155.jpg');
      background-size: cover;
      background-position: center;
@@ -133,13 +133,13 @@
 
  }
 
- .hero h1 {
+ .heroimage h1 {
      font-size: 3em;
      margin-bottom: 10px;
      text-align: center;
  }
 
- .hero p {
+ .heroimage p {
      font-size: 1.2em;
      padding-top: 15px;
  }

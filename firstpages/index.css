@@ -208,3 +208,210 @@ header nav ul li a:hover::after {
     font-size: 14px;
     margin-top: 10px;
 }
+
+
+
+
+#team {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #133E87;
+
+}
+
+.heroimage {
+    background-image: url('/media/Antique-Painting-Eduard-Fischer_sfa31__45155.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: grey;
+    background-size: 1900px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 350px;
+
+}
+
+.heroimage h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.heroimage p {
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 30px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.profile-card {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 1.2em;
+}
+
+.what-we-do {
+    text-align: center;
+    padding-top: 10px;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.what-we-do h2 {
+    color: #133E87;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.testimonials h2 {
+    color: #133E87;
+    margin-bottom: 20px;
+}
+
+.testimonial-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-left: 190px;
+}
+
+.testimonial-card {
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.testimonial-card p {
+    font-size: 1.1em;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    color: #133E87;
+    font-weight: bold;
+}
+
+.information {
+
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+#information-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #133E87;
+    font-weight: bold;
+}
+
+img#picture {
+    height: 90px;
+    width: 115px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+img#aboutsnoopy {
+    float: right 20px;
+}
+
+
+.content {
+    grid-area: content;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+    width: 200px;
+    height: 1000px
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.aside {
+    grid-area: aside;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 250px;
+    margin-left: auto;
+    max-height: 550px;
+}

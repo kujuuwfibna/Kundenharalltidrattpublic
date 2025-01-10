@@ -141,8 +141,8 @@ header nav ul li a:hover::after {
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 25%;
+    height: 100px;
     border-radius: 8px;
 }
 
@@ -170,6 +170,7 @@ header nav ul li a:hover::after {
 .product .buy-button:hover {
     background-color: #ff4c3b;
     transform: scale(1.05);
+    transition: all 0.5 ease;
 }
 
 
@@ -311,10 +312,12 @@ header nav ul li a:hover::after {
 .testimonial-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 120px;
     justify-content: center;
     padding: 40px 20px;
-    margin-left: 190px;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 
 .testimonial-card {
